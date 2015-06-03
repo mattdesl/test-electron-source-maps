@@ -14,13 +14,15 @@
   "devDependencies": {
     "browserify": "^10.2.3",
     "electron-prebuilt": "^0.27.2",
+    "exorcist": "^0.4.0",
     "http-server": "^0.8.0",
     "tape": "^4.0.0"
   },
   "scripts": {
     "bundle": "browserify test.js -d > bundle.js",
-    "electron": "npm run bundle && electron server.js",
-    "browser": "npm run bundle && http-server -o"
+    "electron": "npm run external && electron server.js",
+    "browser": "npm run external && http-server -o",
+    "external": "browserify test.js -d | exorcist bundle.js.map > bundle.js"
   },
   "keywords": [],
   "repository": {
