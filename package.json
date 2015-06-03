@@ -1,0 +1,34 @@
+{
+  "name": "test-electron-source-maps",
+  "version": "1.0.0",
+  "description": "testing a bug",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "electron-prebuilt": "^0.27.2",
+    "http-server": "^0.8.0",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "bundle": "browserify test.js -d > bundle.js",
+    "electron": "npm run bundle && electron server.js",
+    "browser": "npm run bundle && http-server -o"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/test-electron-source-maps.git"
+  },
+  "homepage": "https://github.com/mattdesl/test-electron-source-maps",
+  "bugs": {
+    "url": "https://github.com/mattdesl/test-electron-source-maps/issues"
+  }
+}
