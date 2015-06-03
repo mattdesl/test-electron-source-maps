@@ -23,7 +23,7 @@ To test the script in Electron: (view console)
 npm run electron
 ```
 
-To test the script in a regular browser: (reload the page and view console)
+To test the script in a regular browser: (view console then reload the page)
 
 ```sh
 npm run browser
