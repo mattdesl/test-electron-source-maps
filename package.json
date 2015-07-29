@@ -10,7 +10,9 @@
     "url": "https://github.com/mattdesl"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "electron-prebuilt": "^0.30.1"
+  },
   "devDependencies": {
     "browserify": "^10.2.3",
     "electron-prebuilt": "^0.27.2",
@@ -20,9 +22,7 @@
   },
   "scripts": {
     "bundle": "browserify test.js -d > bundle.js",
-    "electron": "npm run external && electron server.js",
-    "browser": "npm run external && http-server -o",
-    "external": "browserify test.js -d | exorcist bundle.js.map > bundle.js"
+    "electron": "npm run bundle && electron server.js"
   },
   "keywords": [],
   "repository": {
