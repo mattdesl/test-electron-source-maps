@@ -8,7 +8,7 @@ Steps to reproduce:
 
 ```sh
 # clone the repo
-git clone https://github.com/mattdesl/test-electron-source-maps.git
+git clone -b test/first-run https://github.com/mattdesl/test-electron-source-maps.git
 
 # cd into it
 cd test-electron-source-maps
