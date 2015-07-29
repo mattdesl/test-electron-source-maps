@@ -23,15 +23,7 @@ To test the script in Electron: (view console)
 npm run electron
 ```
 
-To test the script in a regular browser: (view console then reload the page)
-
-```sh
-npm run browser
-```
-
-Electron shows `bundle.js` -- whereas Chrome source maps it correctly and shows `test.js` (after initial page refresh).
-
-![image](screenshot.png)
+The `debugger` will not break until you reload the page.
 
 ## License
 
